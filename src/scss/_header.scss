@@ -1,0 +1,83 @@
+.header { 
+    background: url(../img/hero.jpg);
+    background-size: cover;
+    
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   
+
+    &__link {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+
+        &:not(:first-child) {
+            margin-left: 3rem;
+        }
+    }
+
+    svg {
+        cursor: pointer;
+        fill: #fff;
+        height: 2rem;;
+
+        @media screen and (min-width: 768px) {
+            
+           margin-right: 2rem;
+          
+        }
+        
+    }
+
+    &__text {
+        min-height: calc(100vh - 113px);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 1;
+
+        span {
+            display: block;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+            font-size: 20rem;
+            @include respond(tab-port) {
+                font-size: 12rem
+            }
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 1.6rem
+        }
+     }
+
+     &__text--italic {
+        
+         font-style: italic;
+         font-size: 2rem;
+     }
+
+     &__btn {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 5rem;
+        border:2px currentColor solid;
+        background: transparent;
+        padding: 2rem 5rem;;
+        text-transform: uppercase;
+        cursor: pointer;
+     }
+}

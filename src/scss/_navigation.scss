@@ -1,0 +1,57 @@
+.header {
+    &__nav {
+        font-size: 2rem;
+        position: fixed;
+        top: 0;
+        right: -42rem;
+        background-color: #fbbbb5;
+        // width: 22%;
+        // min-width: 300px;
+        height: 100%;
+        z-index: 3;
+        transition: all 0.3s ease;
+
+        @media screen and (min-width: 768px) {
+            
+              width: 22%;
+              min-width: 300px;
+            
+          }
+
+          @media screen and (max-width: 767px) {
+            
+            min-width: 300px;
+          
+        }
+
+        @media screen and (max-width: 500px) {
+            
+            
+            min-width: 208px;
+          
+        }
+
+          .nav {
+              height: inherit;
+              display: flex;
+              flex-flow: column;
+              padding: 20px 30px;
+              list-style: none;
+          }
+
+          &--close {
+            position: absolute;
+            top: 22px;
+            right: 17px;
+            z-index: 3;
+            cursor: pointer;
+            }
+          
+    }
+
+    .moveIn {
+        right: 0;
+    }
+
+        
+}

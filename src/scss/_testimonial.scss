@@ -1,0 +1,69 @@
+.testimonial {
+    background-image: linear-gradient(
+        to left top, 
+        #4a3949cc, 
+        #4a3949cc),
+        url(../img/testimonial-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: full-start / full-end;
+    font-size: 2rem;
+    padding:10rem;
+    position: relative;
+    
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+        @media only screen and (max-width: 768px) {
+            height: 35rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+            height: 39rem;
+        }
+    }
+
+    &__items {
+        position: relative;
+        display: flex;
+        height: 100%;
+        transition: transform 250ms ease-in;
+
+       
+    }
+
+    &__item {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 150px;
+        border-radius: 50%;
+        border: 1rem solid #948a94;
+    }
+
+    &__btns {
+        text-align: center;  
+
+        .indicator {           
+            border:0;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: #7a6d79;
+            margin: 0 12px;
+            cursor: pointer;
+            outline: 0;
+           
+        }
+        .active {
+            background: #fff; 
+        }
+    }
+}

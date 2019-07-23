@@ -1,0 +1,42 @@
+.services {
+     grid-column: center-start / center-end;
+    color:#000;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+    margin: 15rem 0;
+
+    .service {
+        width: auto;
+        margin-bottom: 0;
+        text-align: center;
+            &__image{    
+                font-size: 4rem;   
+                color: #f57567;         
+                border: 2px #000 solid;
+                border-radius: 100%;
+                padding: 2rem;
+                margin-bottom: 1.6rem;
+            }
+
+            h2 {               
+                font-size: 2rem;
+                text-transform: uppercase;
+                    &:after {
+                        content: '';
+                        width: 17%;
+                        margin: 0 auto;
+                        margin-bottom: 1rem;
+                        height: 1px;
+                        background: red;
+                        display: block;
+
+                    }
+            }
+            p {
+                font-size: 1.6rem;
+            }
+    }
+}
