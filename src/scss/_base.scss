@@ -75,6 +75,10 @@ body {
     line-height: 1.6;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+}
+
 .the-page {  
     position: relative;
     right: 0;
@@ -137,6 +141,15 @@ body {
         margin: 0 auto;
         text-align: center;
         
+    }
+
+    a:link, a:visited {
+        color: #fbbbb5;
+        transition: all 1s ease;
+    }
+
+    a:hover {
+        color: #ab7e6c;
     }
 
     &__hide {

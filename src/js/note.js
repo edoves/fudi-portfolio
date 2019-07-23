@@ -10,9 +10,9 @@ document.getElementById('hide').addEventListener('click', () => {
         target.style.marginBottom = 0;
         target.style.overflow = 'hidden';
     }
+
     slideUp(note)
-
-    // slideUp(note, 500);
-
-
 });
+
+const currentYear = new Date().getFullYear();
+document.getElementById('year').innerHTML = currentYear;

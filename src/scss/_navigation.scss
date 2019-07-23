@@ -37,6 +37,9 @@
               flex-flow: column;
               padding: 20px 30px;
               list-style: none;
+              a:link, a:visited {
+                color: #fff;
+              }
           }
 
           &--close {
